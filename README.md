@@ -1,12 +1,15 @@
-# FlashCards Starter Kit
+# FlashCards Project
 
-## Fork This Repo
+Dev 
+Leigh Larson 
 
-On the top right corner of this page, click the **Fork** button.
+## Abstract 
+In this project, I will write a program to simulate a set of flash cards through the command line! A user will be able to see the questions, take guesses, and see a final score at the end of the round. This project will demonstrate my understanding and implementation of ES6 classes, TDD and testing suites, contribution of code to a partially-constructed OOP app, ability to write modular, reusable code that follows SRP, and last but certainly not least, ability to follow spec/comp to complete a functional app. 
 
 ## Setup
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+- On the top right corner of this page, click the **Fork** button.
+- Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
 
 ```bash
 git clone [remote-address] [what you want to name the repo]
