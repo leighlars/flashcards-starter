@@ -5,7 +5,7 @@ Mod 2 Solo Project
 - [Leigh Larson](https://github.com/leighlars)
 
 ### Project Links
-- [Repo](https://github.com/leighlars/slapjack)
+- [Repo](https://github.com/leighlars/flashcards-starter)
 - [Project Spec](https://frontend.turing.io/projects/flash-cards.html)
 
 ## Abstract 
