@@ -35,13 +35,19 @@ Running `node index.js` from the root of your project should result in the follo
 Node server running on port 3000
 ```
 
-In the terminal, run:
+To start the game in the terminal, run:
 
 ```bash
 node index.js
 ```
 
 When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score at the end. 
+
+User may use the arrow keys or type the number to the corresponding answer to answer each question. Hit 'enter' to move to the next question. 
+
+To exit the game at any time, hit control+C twice.
+
+
 
 ## Schedule 
 This project is assigned on Monday, June 30th, and due on July 2nd. I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 
