@@ -17,13 +17,13 @@ class Turn {
   // evaluateGuess: method that returns a boolean indicating if the user’s 
   // guess matches the correct answer on the card
   evaluateGuess() {
-    return this.guess === this.card.correctAnswer ? true : false;
+    return this.guess === this.card.correctAnswer;
   }
 
   // giveFeedback - method that returns either ‘incorrect!’ or ‘correct!’ 
   // based on whether the guess is correct or not.
   giveFeedback() {
-    return this.guess === this.card.correctAnswer ? 'correct!' : 'incorrect!';
+    return this.evaluateGuess() ? 'correct!' : 'incorrect!';
   }
 
 }
