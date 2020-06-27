@@ -44,7 +44,7 @@ node index.js
 When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score at the end. 
 
 ## Schedule 
-I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 
+This project is assigned on Monday, June 30th, and due on July 2nd. I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 
 
 ## Reflection
 This project was a lot of fun to create. I was able to move through the first two iterations pretty quickly, pausing to refactor my code. I was glad to find the beforeEach method to clean up my test suite instead of having repetitive lines of code for each test. The game-test was a little tricky, but that was mainly me not slowing down to read the files appended to the top of the game file. All in all, I really appreciated seeing how far I have come in my learning. I am grateful for my mentor, Ryan Barnett, for taking a second look at the code and pointing out ways I could refactor or force me to talk out my pseudocode so I could discover my own logic holes. 
