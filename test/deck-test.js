@@ -2,7 +2,6 @@ const chai = require('chai');
 const expect = chai.expect;
 const Card = require('../src/Card');
 const Deck = require('../src/Deck');
-const { assert } = require('chai');
 
 describe('Deck', function () {
 
@@ -23,10 +22,7 @@ describe('Deck', function () {
     const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     const deck = new Deck([card1, card2, card3]);
 
-    
-    assert.deepEqual(deck.cards, [card1, card2, card3]);
-    
-
+    expect(deck.cards).to.deep.equal([card1, card2, card3]);
   });
 
   it('should return number of cards in deck', function () {
@@ -35,10 +31,7 @@ describe('Deck', function () {
     const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     const deck = new Deck([card1, card2, card3]);
 
-    let numCards = deck.countCards();
-
-    assert.equal(numCards, 3);
+    expect(deck.countCards()).to.equal(3);
   });
-
 
 });

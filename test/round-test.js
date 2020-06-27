@@ -25,7 +25,7 @@ describe('Round', function () {
     const deck = new Deck([card1, card2, card3]);
     const round = new Round(deck);
 
-    assert.deepEqual(round.deck, [card1, card2, card3]);
+    assert.equal(round.deck, [card1, card2, card3]);
 
   });
 
