@@ -13,16 +13,31 @@ describe('Deck', function () {
 
   it('should be an instance of Deck', function () {
     const deck = new Deck();
-    
+
     expect(deck).to.be.an.instanceof(Deck);
   });
 
+  it('should be initialized with an array of Card objects', function() {
+    const card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
+    const card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+    const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+    const deck = new Deck([card1, card2, card3]);
+
+    
+    assert.deepEqual(deck.cards, [card1, card2, card3]);
+    
+
+  });
+
   it('should return number of cards in deck', function () {
-    const deck = new Deck();
+    const card1 = new Card(1, 'What is Robbie\'s favorite animal', ['sea otter', 'pug', 'capybara'], 'sea otter');
+    const card2 = new Card(14, 'What organ is Khalid missing?', ['spleen', 'appendix', 'gallbladder'], 'gallbladder');
+    const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
+    const deck = new Deck([card1, card2, card3]);
 
-    let numCards = countCards();
+    let numCards = deck.countCards();
 
-    assert.equal(numCards, )
+    assert.equal(numCards, 3);
   });
 
 
