@@ -83,6 +83,10 @@ describe('Round', function () {
   });
 
   it('should print end game message and percent correct to console', function() {
+    /* if ran before game start */
+    expect(round.endRound()).to.equal('** Round over! ** You answered 0% of the questions correctly!');
+
+  /* normal gameplay */
     round.takeTurn('pug');
 
     expect(round.endRound()).to.equal('** Round over! ** You answered 0% of the questions correctly!');

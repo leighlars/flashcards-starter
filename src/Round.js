@@ -27,7 +27,7 @@ class Round {
   }
   
   endRound() {
-    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`;
+    return `** Round over! ** You answered ${this.calculatePercentCorrect() || 0}% of the questions correctly!`;
   }
 
 }
