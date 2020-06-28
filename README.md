@@ -6,6 +6,7 @@ Mod 2 Solo Project
 
 ### Project Links
 - [Repo](https://github.com/leighlars/flashcards-starter)
+- [Project Board](https://github.com/leighlars/flashcards-starter/projects/1)
 - [Project Spec](https://frontend.turing.io/projects/flash-cards.html)
 
 ## Abstract 
@@ -41,12 +42,12 @@ To start the game in the terminal, run:
 node index.js
 ```
 
-When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score at the end. 
+When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score at the end. If the user fails to score 90% or above, the user must play again. 
 
-User may use the arrow keys or type the number to the corresponding answer to answer each question. Hit 'enter' to move to the next question. 
+User may use the arrow keys or type the number of the corresponding answer to answer each question. 
+Hit 'enter' to move to the next question. 
 
 To exit the game at any time, hit control+C twice.
-
 
 
 ## Schedule 

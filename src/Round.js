@@ -27,7 +27,13 @@ class Round {
   }
   
   endRound() {
-    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect() || 0}% of the questions correctly!`);
+    if (this.calculatePercentCorrect >= 90) {
+      console.log(`** Round over! ** You answered ${this.calculatePercentCorrect() || 0}% of the questions correctly!`);
+    } else {
+      console.log(`** Round over! ** 
+      You answered only ${this.calculatePercentCorrect() || 0}% of the questions correctly. 
+      You need to score 90% to pass! Play again.`);
+    }
   }
 
 }
