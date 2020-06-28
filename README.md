@@ -49,7 +49,6 @@ Hit 'enter' to move to the next question.
 
 To exit the game at any time, hit control+C twice.
 
-
 ## Schedule 
 This project is assigned on Monday, June 30th, and due on July 2nd. I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 
 
