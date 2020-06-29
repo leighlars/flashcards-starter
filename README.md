@@ -12,7 +12,7 @@ Mod 2 Solo Project
 ## Abstract 
 In this project, I will write a program to simulate a set of flash cards through the command line! A user will be able to see the questions, take guesses, and see a final score at the end of the round. This project will demonstrate my understanding and implementation of ES6 classes, TDD and testing suites, contribution of code to a partially-constructed OOP app, ability to write modular, reusable code that follows SRP, and last but certainly not least, ability to follow spec/comp to complete a functional app. 
 
-## Functionality Showcase 
+## Gameplay Gifs
 ![gif of gameplay](/readme-imgs/flashstart.gif) </br>
 *Beginning of gameplay*
 
