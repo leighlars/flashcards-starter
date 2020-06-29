@@ -28,28 +28,16 @@ class Round {
     return Math.floor(((this.turns - this.incorrectGuesses.length) / this.turns) * 100);
   }
   
-  endRound() {
-    if (this.calculatePercentCorrect >= 90) {
-      console.log(`** Round over! ** 
-      You answered ${this.calculatePercentCorrect() || 0}% of the questions correctly.
-      Great job!`);
-    } else {
-      console.log(`** Round over! ** 
-      You answered only ${this.calculatePercentCorrect() || 0}% of the questions correctly. 
-      You need to score 90% to pass! Play again.`);
-      // how do i make the game start again?
-    }
-  }
-
   showReportCard() {
     let incorrectCards = prototypeQuestions.filter(card => {
       this.incorrectGuesses.find(guess => { 
-        return guess === card.id
+        return guess === card.id;
       });
+
       let correctCards = incorrectCards.map(card => {
         let obj = {};
         obj.question = card.question;
-        obj.answer = card.correctAnswer;
+        obj.correctAnswer = card.correctAnswer;
         return obj;
       })
     });
@@ -61,6 +49,20 @@ class Round {
     // console log Report Card! Here are the cards you need to study: the array
     // is this the appropriate way to do this?
   }
+  endRound() {
+    if (this.calculatePercentCorrect >= 90) {
+      console.log(`** Round over! ** 
+      You answered ${this.calculatePercentCorrect() || 0}% of the questions correctly.
+      Great job!`);
+      return process.exit();
+    } else {
+      console.log(`** Round over! ** 
+      You answered only ${this.calculatePercentCorrect() || 0}% of the questions correctly. 
+      You need to score 90% to pass! Play again.`);
+      return process.exit();
+    }
+  }
+
 }
 
 module.exports = Round;

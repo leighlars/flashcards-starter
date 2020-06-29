@@ -80,6 +80,14 @@ describe('Round', function () {
     expect(round.calculatePercentCorrect()).to.equal(50);
   });
 
+  it('should show an array of objects of the question and correct answer that matches the incorrect guesses', function() {
+    round.takeTurn('pug');
+    round.takeTurn('spleen');
+    expect(round.incorrectGuesses).to.deep.equal([1, 14])
+  
+    expect(round.showReportCard()).to.deep.equal([{ question: 'What is Robbie\'s favorite animal', correctAnswer: 'sea otter' }, { question: 'What organ is Khalid missing?', correctAnswer: 'gallbladder'}]);
+  });
+
   it('should print end game message and percent correct to console', function() {
     round.takeTurn('pug');
 
@@ -89,11 +97,5 @@ describe('Round', function () {
 
     expect(round.endRound()).to.equal('** Round over! ** You answered only 50% of the questions correctly. You need to score 90% to pass. Play again.');
   });
-
-  it('should show incorrect guesses, and the correct answer', function() {
-    expect(round.showReportCard()).to.equal()
-
-  })
-
 
 });
