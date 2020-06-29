@@ -80,14 +80,29 @@ describe('Round', function () {
     expect(round.calculatePercentCorrect()).to.equal(50);
   });
 
+  it('should return time elapsed from game start', function() {
+    round.start = 0;
+    Date.now = function () {
+      return 120000; 
+    }
+    expect(round.timer()).to.equal('In 2 minutes and 0 seconds,');
+  });
+
   it('should print end game message and percent correct to console', function() {
+    // before game start
+    expect(round.turns).to.equal(0);
+    expect(round.endRound()).to.equal('** Round over! ** You answered only 0% of the questions correctly. You need to score 90% to pass. Play again.');
+
+    //normal gameplay
     round.takeTurn('sea otter');
 
+    expect(round.turns).to.equal(1);
     expect(round.endRound()).to.equal('** Round over! ** You answered 100% of the questions correctly. Great job!');
 
-    // round.takeTurn('gallbladder');
+    round.takeTurn('gallbladder');
 
-    // expect(round.endRound()).to.equal('** Round over! ** You answered only 50% of the questions correctly. You need to score 90% to pass. Play again.');
+    expect(round.turns).to.equal(2);
+    expect(round.endRound()).to.equal('** Round over! ** You answered only 50% of the questions correctly. You need to score 90% to pass. Play again.');
   });
 
 });

@@ -1,7 +1,4 @@
 const Turn = require('../src/Turn');
-const data = require('./data');
-// const prototypeQuestions = data.prototypeData;
-
 
 class Round {
   constructor(deck) {
@@ -38,7 +35,7 @@ class Round {
   }
 
   endRound() {
-    if (this.calculatePercentCorrect() >= 90) {
+    if (this.calculatePercentCorrect() >= 90 && this.turns !== 0) {
       console.log(`** Round over! ** 
       ${this.timer()} you answered ${this.calculatePercentCorrect() || 0}% of the questions correctly.
       Great job!`);
