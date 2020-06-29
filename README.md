@@ -42,15 +42,21 @@ To start the game in the terminal, run:
 node index.js
 ```
 
-When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score at the end. If the user fails to score 90% or above, the user must play again. 
+When the game is functioning appropriately, the user will be prompted for each question, have the opportunity to select an answer, and will be given feedback. The user will be able to play through the entire deck of cards, and see their correct answer score and time at the end. If the user fails to score 90% or above, the user is encouraged to play again. 
 
 User may use the arrow keys or type the number of the corresponding answer to answer each question. 
 Hit 'enter' to move to the next question. 
 
-To exit the game at any time, hit control+C twice.
+To exit the game before the end of the game, hit control+C twice. Otherwise, the game will end automatically, and the user will need to type `node index.js` to start a new game. 
 
 ## Schedule 
 This project is assigned on Monday, June 30th, and due on July 2nd. I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 
+
+- I spent day one writing each test in it's respective file, and immediately failing it, then working on the implementation code to solve it. I got through
+the first two iterations pretty easily, but needed to slow down on the game file. 
+- After a good night's rest, I completed the game file, played a few games, saw that it was functional, and then decided to play around in extensions: 
+- I added a timer method that was invoked / interpolated in the endRound() message. 
+- I took some creative liberties in the endRound message-- if the user scored at least a 90, the console would print an encouraging word in addition to the spec's requirement. Otherwise, the message encourages the user to play again. The game then ends, and the user can start again by typing `node index.js` in the terminal. 
 
 ## Reflection
 This project was a lot of fun to create. I was able to move through the first two iterations pretty quickly, pausing to refactor my code. I was glad to find the beforeEach method to clean up my test suite instead of having repetitive lines of code for each test. The game-test was a little tricky, but that was mainly me not slowing down to read the files appended to the top of the game file. All in all, I really appreciated seeing how far I have come in my learning. I am grateful for my mentor, Ryan Barnett, for taking a second look at the code and pointing out ways I could refactor or force me to talk out my pseudocode so I could discover my own logic holes. 
