@@ -47,7 +47,7 @@ When the game is functioning appropriately, the user will be prompted for each q
 User may use the arrow keys or type the number of the corresponding answer to answer each question. 
 Hit 'enter' to move to the next question. 
 
-To exit the game before the end of the game, hit control+C twice. Otherwise, the game will end automatically, and the user will need to type `node index.js` to start a new game. 
+To exit the game before the end of the game, hit control+c. Otherwise, the game will end automatically, and the user will need to type `node index.js` to start a new game. 
 
 ## Schedule 
 This project is assigned on Monday, June 30th, and due on July 2nd. I aim to complete the project in about 2 days. I will seek insight from my mentor or MDN when I get in a bind or if I just want a fresh way to code. 

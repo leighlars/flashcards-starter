@@ -37,7 +37,7 @@ class Round {
   }
 
   endRound() {
-    if (this.calculatePercentCorrect >= 90) {
+    if (this.calculatePercentCorrect() >= 90) {
       console.log(`** Round over! ** 
       ${this.timer()} you answered ${this.calculatePercentCorrect() || 0}% of the questions correctly.
       Great job!`);
