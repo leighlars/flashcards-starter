@@ -4,19 +4,19 @@ class Turn {
     this.card = card;
   }
 
-  returnGuess() {
+  returnGuess = () => {
     return this.guess;
   }
 
-  returnCard() {
+  returnCard = () => {
     return this.card;
   }
 
-  evaluateGuess() {
+  evaluateGuess = () => {
     return this.guess === this.card.correctAnswer;
   }
 
-  giveFeedback() {
+  giveFeedback = () => {
     return this.evaluateGuess() ? 'correct!' : 'incorrect!';
   }
 
