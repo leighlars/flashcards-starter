@@ -10,7 +10,7 @@ class Game {
     this.currentRound = null;
   }
 
-  createCards = (cardData) => {
+  createCards(cardData){
     return cardData.map(card => new Card(card.id, card.question, card.answers, card.correctAnswer));
   }
 

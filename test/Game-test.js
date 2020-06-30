@@ -13,15 +13,11 @@ describe('Game', function() {
     cards = game.createCards(prototypeQuestions); 
     deck = new Deck(cards);
     round = new Round(deck);
-    game.start();
+  });
+  
+  it('should initialize current round as null', function() {
+    expect(game.currentRound).to.equal(null);
   });
 
-  it('should keep track of current round', function() {
-    expect(game.currentRound).to.deep.equal(round);
-  });
-
-  it('should create and put cards in deck and create new round', function() {
-    expect(game.currentRound.deck).to.deep.equal(round.deck);
-  });
 
 });

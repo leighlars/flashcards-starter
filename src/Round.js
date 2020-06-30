@@ -8,7 +8,7 @@ class Round {
     this.start = Date.now();
   }
 
-  returnCurrentCard =() => {
+  returnCurrentCard = () => {
     return this.deck[0];
   }
 
@@ -27,7 +27,7 @@ class Round {
     return Math.floor(((this.turns - this.incorrectGuesses.length) / this.turns) * 100);
   }
   
-  timer= () => {
+  timer = () => {
     let totalSeconds = Math.floor((Date.now() - this.start) / 1000);
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = totalSeconds - (minutes * 60);
