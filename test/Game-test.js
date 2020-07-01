@@ -14,6 +14,14 @@ describe('Game', function() {
     deck = new Deck(cards);
     round = new Round(deck);
   });
+
+  it('should be a function', function () {
+    expect(Game).to.be.a("function");
+  });
+
+  it('should be an instance of Game', function () {
+    expect(game).to.be.an.instanceof(Game);
+  });
   
   it('should initialize current round as null', function() {
     expect(game.currentRound).to.equal(null);
