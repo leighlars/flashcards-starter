@@ -27,7 +27,7 @@ describe('Game', function() {
     expect(game.currentRound).to.equal(null);
   });
 
-  it('should create and put cards in deck and create new round', function() {
+  it('should create and put card objects in deck and instantiate new round', function() {
     expect(game.start());
 
     expect(game.currentRound.deck.length).to.equal(30);
