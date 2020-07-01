@@ -31,6 +31,7 @@ describe('Game', function() {
     expect(game.start());
 
     expect(game.currentRound.deck.length).to.equal(30);
+    expect(game.currentRound.deck[0]).to.deep.equal({id: 1, question: 'What allows you to define a set of related information using key-value pairs?', answers: ['object', 'array', 'function'], correctAnswer: 'object'});
   });
 
 });
