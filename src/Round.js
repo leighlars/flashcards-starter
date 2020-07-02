@@ -35,14 +35,17 @@ class Round {
   }
 
   endRound = () => {
+    let msg1 = `** Round over! ** 
+      ${this.timer()} you answered 
+      ${this.calculatePercentCorrect() || 0}% of the questions correctly. Great job!`;
+    let msg2 = `** Round over! ** 
+      ${this.timer()} you answered only ${this.calculatePercentCorrect() || 0}% 
+      of the questions correctly. You need to score 90% 
+      to pass! Play again.`;
     if (this.calculatePercentCorrect() >= 90 && this.turns !== 0) {
-      console.log(`** Round over! ** 
-      ${this.timer()} you answered ${this.calculatePercentCorrect() || 0}% of the questions correctly.
-      Great job!`);
+      console.log(msg1);
     } else {
-      console.log(`** Round over! ** 
-      ${this.timer()} you answered only ${this.calculatePercentCorrect() || 0}% of the questions correctly. 
-      You need to score 90% to pass! Play again.`);
+      console.log(msg2);
     }
     return process.exit();
   }
